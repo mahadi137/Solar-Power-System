@@ -1,0 +1,220 @@
+figure(111111)
+hold on
+box on
+grid on
+plot(timesU_out,I_out.*U_out11, 'LineWidth',1 )
+plot(U_out12,I_out12.*U_out12, 'LineWidth',1 )
+set(gca,'FontSize',14,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Power (W)')
+axis([0 10 0 2500])
+
+P = times(U,I)
+
+
+
+figure(1025)
+hold on
+box on
+grid on
+plot(time,I_out1.*U_out1, 'LineWidth',1 )
+plot(time,I_out2.*U_out2, 'LineWidth',1 )
+set(gca,'FontSize',14,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Power (P)')
+axis([0 10 0 2500])
+
+figure(1025)
+hold on
+box on
+grid on
+plot(time,I_out3.*U_out3, 'LineWidth',1 )
+plot(time,I_out2.*U_out2, 'LineWidth',1 )
+set(gca,'FontSize',14,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Power (P)')
+axis([0 10 0 2500])
+
+
+figure(1)
+hold on
+box on
+grid on
+plot(time,U_out, 'LineWidth',1 )
+plot(time,U_out1, 'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Voltage (V)')
+axis([0 10 0 350])
+
+figure(13)
+hold on
+box on
+grid on
+plot(time,U_out1, 'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Voltage (V)')
+axis([0 10 0 350])
+
+figure(14)
+hold on
+box on
+grid on
+plot(U_ou1,I_out1.*U_ou1,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Voltage (V)')
+ylabel('Power (P)')
+axis([0 10 0 350])
+
+figure(111)
+hold on
+box on
+grid on
+plot(U_out1,I_out1.*U_out1, 'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Voltage (V)')
+ylabel('Power (W)')
+axis([0 350 0 2000])
+
+figure(1333)
+hold on
+box on
+grid on
+plot(U_out1,I_out1.*U_out1,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Voltage (V)')
+ylabel('Power (P)')
+axis([0 350 0 2000])
+
+
+figure(1333)
+hold on
+box on
+grid on
+plot(U_out2,I_out2.*U_out2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Voltage (V)')
+ylabel('Power (P)')
+axis([0 350 0 2000])
+
+
+figure(1)
+hold on
+box on
+grid on
+plot(T19,'LineWidth',1 )
+plot(Time_sim,Tmod_sim,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Module Temperature (oC)')
+axis([0 3500 0 70])
+
+
+
+figure(112)
+hold on
+box on
+grid on
+plot(T19,'LineWidth',1 )
+plot(Time_sim,Tmod_sim,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Module Temperature (oC)')
+axis([0 3500 0 70])
+
+
+figure(111112)
+hold on
+box on
+grid on
+plot(Tmod_sim,'LineWidth',1 )
+plot(Tmod_sim1,'LineWidth',1 ) bl=2.52, red 2.53, 2.48e4
+plot(Tmod_sim2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 5000 0 70])
+
+
+
+figure(1111124342)
+hold on
+box on
+grid on
+plot(Tmod_sim,'LineWidth',1 )
+plot(Tmod_sim1,'LineWidth',1 ) bl=3.0, red 2.52, 2.39e4 wind
+plot(Tmod_sim2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
+
+
+figure(1342)
+hold on
+box on
+grid on
+plot(Tmod_sim,'LineWidth',1 )
+plot(Tmod_sim1,'LineWidth',1 ) heat
+plot(Tmod_sim2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
+
+figure(145)
+hold on
+box on
+grid on
+plot(Tmod_sim,'LineWidth',1 )
+plot(Tmod_sim1,'LineWidth',1 )
+plot(Tmod_sim2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
+
+
+figure(145)
+hold on
+box on
+grid on
+plot(Tmod_sim,Irradiance_change,'LineWidth',1 )
+plot(Tmod_sim1,Irradiance_change,'LineWidth',1 )
+plot(Tmod_sim2,Irradiance_change,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
+
+
+
+figure(1)
+hold on
+box on
+grid on
+plot(Irradiance_change,'LineWidth',1 )
+plot(Irradiance_change1,'LineWidth',1 )
+plot(Irradiance_change2,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
+
+figure(1132)
+hold on
+box on
+grid on
+plot(Irradiance_change1,'LineWidth',1 )
+plot(Tmod_sim,'LineWidth',1 )
+set(gca,'FontSize',12,'FontName','arial')
+xlabel('Time (T)')
+ylabel('Temperature (oC)')
+axis([0 30000 0 70])
+
